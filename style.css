@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+header {
+  margin: 4rem 0 5rem 0;
+}
+header h1 {
+  margin-bottom: 1rem;
+}
+#letters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  font-size: 3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 780px) {
+  #letters {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+#letters div {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 5px;
+  color: rgb(13, 173, 34);
+  background-color: rgba(126, 126, 126, 0.26);
+  cursor: pointer;
+}
+#letters div.used {
+  color: rgba(13, 173, 34, 0.582);
+  opacity: 0.5;
+  /* visibility: hidden; */
+  background-color: rgba(221, 221, 221, 0.26);
+  border-color: rgba(0, 0, 0, 0.445);
+}
+#letters div:hover {
+  background-color: rgba(126, 126, 126, 0.678);
+  color: rgb(25, 221, 51);
+}
+main #image {
+  margin: 5rem auto;
+}
+#gameover {
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: none;
+  color: red;
+  font-weight: bold;
+}
+#win {
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: none;
+  color: green;
+  font-weight: bold;
+}
+#answer p {
+  letter-spacing: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
