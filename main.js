@@ -21,6 +21,7 @@ function ifWon (){
         document.querySelector("#image").querySelector("img").src = "/assets/winner.png"
         document.querySelector("#win").style.display = "block"
         document.getElementById("letters").style.display = "none"
+        window.removeEventListener("keydown", keyHandler);
     }
 }
 function ifLose() {
@@ -28,7 +29,8 @@ function ifLose() {
         document.getElementById("answer").querySelector("p").innerHTML = `gameover`;
         document.getElementById("answer").querySelector("p").style.color = "red";
         document.getElementById("letters").style.display =
-          "none";
+            "none";
+        window.removeEventListener("keydown", keyHandler);
     }
 }
 
