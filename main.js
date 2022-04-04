@@ -22,6 +22,9 @@ function ifWon (){
         document.querySelector("#win").style.display = "block"
         document.getElementById("letters").style.display = "none"
         window.removeEventListener("keydown", keyHandler);
+        window.addEventListener('keydown', () => {
+            location.reload()
+        })
     }
 }
 function ifLose() {
@@ -31,6 +34,9 @@ function ifLose() {
         document.getElementById("letters").style.display =
             "none";
         window.removeEventListener("keydown", keyHandler);
+         window.addEventListener("keydown", () => {
+             location.reload();
+         });
     }
 }
 
